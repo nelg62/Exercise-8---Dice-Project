@@ -1,8 +1,10 @@
+/* global settings */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* container for dices */
 .dicecontainer {
     display: grid;
     grid-template-columns: auto;
@@ -11,18 +13,21 @@
     width: 100px;
 }
 
+/* dice and diceoutput container */
 .dice,
 .diceoutput {
    margin: 5px; 
 
 }
 
+/* dice button */
 .dicebtn {
     height: 100%;
     width: 100%;
 
 }
 
+/* dice output text */
 .diceoutputtxt {
     text-align: center;
     
