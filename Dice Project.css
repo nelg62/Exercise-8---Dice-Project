@@ -8,7 +8,6 @@
 .dicecontainer {
     display: grid;
     grid-template-columns: auto;
-    
     height: 150px;
     width: 100px;
 }
@@ -16,19 +15,18 @@
 /* dice and diceoutput container */
 .dice,
 .diceoutput {
-   margin: 5px; 
-
+    margin: 5px;
+    height: 100%;
 }
 
 /* dice button */
 .dicebtn {
     height: 100%;
     width: 100%;
-
+    max-height: 65px;
 }
 
 /* dice output text */
 .diceoutputtxt {
     text-align: center;
-    
 }
