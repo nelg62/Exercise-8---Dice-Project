@@ -1,90 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Dice Project.css">
-</head>
+    <link rel="stylesheet" href="Dice Project.css" />
+  </head>
 
-<body>
+<!-- todo add forms and make javacript to make the html not duplicates-->
+
+  <body>
     <div class="diceouterbox">
-
-        <!-- D4 Dice -->
-        <div class="dicecontainer">
-            <!-- D4 button -->
-            <div class="dice">
-                <button class="dicebtn" id="D4" onclick="D4()"></button>
-            </div>
-            <!-- D4 text output -->
-            <div class="diceoutput">
-                <h1 class="diceoutputtxt" id="D4output"></h1>
-            </div>
+      <!-- choose number dice -->
+      <div class="dicecontainer">
+        <div class="dice">
+          <button class="dicebtn" id="choicebtn" onclick="choice()"></button>
+          <input type="number" min="1" max="100" id="choicenumber" />
         </div>
-
-        <!-- D6 Dice -->
-        <div class="dicecontainer">
-            <!-- D6 button -->
-            <div class="dice">
-                <button class="dicebtn" id="D6" onclick="D6()"></button>
-            </div>
-            <!-- D6 text output -->
-            <div class="diceoutput">
-                <h1 class="diceoutputtxt" id="D6output"></h1>
-            </div>
+        <div class="diceoutput">
+          <h1 class="diceoutputtxt" id="choiceoutput"></h1>
         </div>
+      </div>
 
-        <!-- D8 Dice -->
-        <div class="dicecontainer">
-            <!-- D8 button -->
-            <div class="dice">
-                <button class="dicebtn" id="D8" onclick="D8()"></button>
-            </div>
-            <!-- D8 text output -->
-            <div class="diceoutput">
-                <h1 class="diceoutputtxt" id="D8output"></h1>
-            </div>
+      <!-- D4 Dice -->
+      <div class="dicecontainer">
+        <!-- D4 button -->
+        <div class="dice">
+          <button
+            class="dicebtn"
+            id="D4"
+            onclick="everydice(this.value)"
+            value="4"
+          ></button>
         </div>
+        <!-- D4 text output -->
+        <div class="diceoutput">
+          <h1 class="diceoutputtxt" id="D4output"></h1>
+        </div>
+      </div>
 
-        <!-- D10 Dice -->
-        <div class="dicecontainer">
-            <!-- D10 button -->
-            <div class="dice">
-                <button class="dicebtn" id="D10" onclick="D10()"></button>
-            </div>
-            <!-- D10 text output -->
-            <div class="diceoutput">
-                <h1 class="diceoutputtxt" id="D10output"></h1>
-            </div>
+      <!-- D6 Dice -->
+      <div class="dicecontainer">
+        <!-- D6 button -->
+        <div class="dice">
+          <button class="dicebtn" id="D6" onclick="everydice(this.value)" value="6"></button>
         </div>
+        <!-- D6 text output -->
+        <div class="diceoutput">
+          <h1 class="diceoutputtxt" id="D6output"></h1>
+        </div>
+      </div>
 
-        <!-- D12 Dice -->
-        <div class="dicecontainer">
-            <!-- D12 button -->
-            <div class="dice">
-                <button class="dicebtn" id="D12" onclick="D12()"></button>
-            </div>
-            <!-- D12 text output -->
-            <div class="diceoutput">
-                <h1 class="diceoutputtxt" id="D12output"></h1>
-            </div>
+      <!-- D8 Dice -->
+      <div class="dicecontainer">
+        <!-- D8 button -->
+        <div class="dice">
+          <button class="dicebtn" id="D8" onclick="everydice(this.value)" value="8"></button>
         </div>
+        <!-- D8 text output -->
+        <div class="diceoutput">
+          <h1 class="diceoutputtxt" id="D8output"></h1>
+        </div>
+      </div>
 
-        <!-- D20 Dice -->
-        <div class="dicecontainer">
-            <!-- D20 button -->
-            <div class="dice">
-                <button class="dicebtn" id="D20" onclick="D20()"></button>
-            </div>
-            <!-- D20 text output -->
-            <div class="diceoutput">
-                <h1 class="diceoutputtxt" id="D20output"></h1>
-            </div>
+      <!-- D10 Dice -->
+      <div class="dicecontainer">
+        <!-- D10 button -->
+        <div class="dice">
+          <button class="dicebtn" id="D10" onclick="everydice(this.value)" value="10"></button>
         </div>
+        <!-- D10 text output -->
+        <div class="diceoutput">
+          <h1 class="diceoutputtxt" id="D10output"></h1>
+        </div>
+      </div>
+
+      <!-- D12 Dice -->
+      <div class="dicecontainer">
+        <!-- D12 button -->
+        <div class="dice">
+          <button class="dicebtn" id="D12" onclick="everydice(this.value)" value="12"></button>
+        </div>
+        <!-- D12 text output -->
+        <div class="diceoutput">
+          <h1 class="diceoutputtxt" id="D12output"></h1>
+        </div>
+      </div>
+
+      <!-- D20 Dice -->
+      <div class="dicecontainer">
+        <!-- D20 button -->
+        <div class="dice">
+          <button class="dicebtn" id="D20" onclick="everydice(this.value)" value="20"></button>
+        </div>
+        <!-- D20 text output -->
+        <div class="diceoutput">
+          <h1 class="diceoutputtxt" id="D20output"></h1>
+        </div>
+      </div>
     </div>
 
     <script src="Dice Project.js"></script>
-</body>
-
+  </body>
 </html>

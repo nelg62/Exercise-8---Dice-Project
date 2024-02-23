@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 /* flexouter box for multiple dice */
 .diceouterbox {
     display: flex;
@@ -22,6 +27,17 @@
 .diceoutput {
     margin: 5px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#choicenumber {
+    width: 62px;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
 }
 
 /* dice button */
@@ -29,7 +45,9 @@
     height: 100%;
     width: 10%;
     max-height: 65px;
+    min-height: 65px;
     min-width: 65px;
+    max-width: 65px;
 }
 
 /* dice output text */
