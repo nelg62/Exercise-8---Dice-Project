@@ -23,9 +23,24 @@ const diceobjects = [4,6,8,10,12,20]
 
 
 for (let i = 0; i < diceobjects.length; i++) {
-  document.getElementById('diceouterbox').innerHTML += `<div>TESt</div>`
+  document.getElementById('diceouterbox').innerHTML += `
+  <div class="dicecontainer">
+    
+    <div class="dice">
+      <button
+        class="dicebtn"
+        id="D${diceobjects[i]}"
+        onclick="everydice(this.value)"
+        value="${diceobjects[i]}"
+      ></button>
+    </div>
+    
+    <div class="diceoutput">
+      <h1 class="diceoutputtxt" id="D${diceobjects[i]}output"></h1>
+    </div>
+  </div>`
   
-  
+ 
   
   
   
